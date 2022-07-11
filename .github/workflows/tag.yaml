@@ -16,7 +16,7 @@ jobs:
         id: current_date
         env:
           TZ: 'Asia/Tokyo'
-        run: echo "current_date=$(date +'%Y%m%d%H%M')" >> $GITHUB_ENV
+        run: echo "current_date=$(date +'%Y-%m-%d-%H:%M')" >> $GITHUB_ENV
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
